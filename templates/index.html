@@ -7,14 +7,14 @@
   </head>
   <body>
     <div class="container">
+      <div class="eight columns">
       <h1>Save files to Dropbox</h1>
-      <p>
-        Enter the URL of the file to be saved to Dropbox in this field:
+      <p>Enter the URL of the file to be saved to Dropbox in this field: </p>
         <form id="link-form">
-          <input id="url" name="url" value="" placeholder="Enter URL here" /><br/>
-          <a class="dropbox-saver" href="">Anchor button</a>
+          <input class="u-full-width" id="url" name="url" type="url" placeholder="Enter URL here" /><br/>
+          <input class="button-primary" id="submit" value="Save to DropBox" type="submit">
         </form>
-      </p>
+      </div>
     </div>
     <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs"
