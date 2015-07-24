@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "handlebars": "^3.0.3",
-    "hapi": "^8.8.0"
+    "hapi": "^8.8.0",
+    "valid-url": "^1.0.9"
   }
 }
