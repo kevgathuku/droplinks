@@ -2,21 +2,23 @@
 <html>
   <head>
       <title> {{title}} </title>
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="css/skeleton.css">
   </head>
   <body>
-    <div>
+    <div class="container">
       <h1>Save files to Dropbox</h1>
       <p>
         Enter the URL of the file to be saved to Dropbox in this field:
-        <form>
-          <input name="url" value="" placeholder="Enter URL here" />
-          <input type="submit" value="Save URL" />
+        <form id="link-form">
+          <input id="url" name="url" value="" placeholder="Enter URL here" /><br/>
+          <a class="dropbox-saver" href="">Anchor button</a>
         </form>
       </p>
     </div>
     <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs"
     data-app-key="2depygh4g2l61s3"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/bundle.js"></script>
   </body>
 </html>
