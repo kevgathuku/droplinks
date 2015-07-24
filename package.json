@@ -11,5 +11,8 @@
     "download"
   ],
   "author": "Kevin Ndung'u",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^8.8.0"
+  }
 }
