@@ -11,15 +11,15 @@ server.views({
   path: Path.join(__dirname, 'templates')
 });
 
-server.route({
+var routes = [
+{
   method: 'GET',
   path: '/',
   handler: function (request, reply) {
       reply.view('index', { title: 'Dropbox Link Saver' });
   }
-});
-
-server.route({
+},
+{
   method: 'GET',
   path: '/{param*}',
   handler: {
@@ -27,7 +27,10 @@ server.route({
       path: 'static'
     }
   }
-});
+}
+]
+
+server.route(routes);
 
 server.start(function () {
   console.log('Server running at:', server.info.uri);
