@@ -1,0 +1,15 @@
+{
+  "name": "dropbox-savelinks",
+  "version": "0.1.0",
+  "description": "A minimal example demonstrating saving web links to Dropbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dropbox",
+    "download"
+  ],
+  "author": "Kevin Ndung'u",
+  "license": "ISC"
+}
