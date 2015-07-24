@@ -17,6 +17,7 @@
     "url": "https://bitbucket.org/kingkev/dropbox-savelinks"
   },
   "dependencies": {
+    "handlebars": "^3.0.3",
     "hapi": "^8.8.0"
   }
 }
