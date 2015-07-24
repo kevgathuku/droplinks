@@ -12,6 +12,10 @@
   ],
   "author": "Kevin Ndung'u",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/kingkev/dropbox-savelinks"
+  },
   "dependencies": {
     "hapi": "^8.8.0"
   }
