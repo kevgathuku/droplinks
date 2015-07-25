@@ -1,10 +1,11 @@
 {
-  "name": "dropbox-savelinks",
+  "name": "droplinks",
   "version": "0.1.0",
   "description": "A minimal example demonstrating saving web links to Dropbox",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [
     "dropbox",
@@ -14,7 +15,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/kingkev/dropbox-savelinks"
+    "url": "https://github.com/kevgathuku/dropbox-savelinks.git"
   },
   "dependencies": {
     "browserify": "^11.0.0",
