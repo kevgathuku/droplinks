@@ -13,6 +13,13 @@ cd droplinks
 npm install
 ```
 
+## Development Setup
+
+This project depends on browserify to use some node modules in the browser
+
+These are managed through a grunt task.
+Simply run `grunt watch` to automatically compile the required files when changes are made.
+
 Once the dependencies are installed, get the server up by running:
 
 `npm start`

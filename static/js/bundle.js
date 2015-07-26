@@ -186,7 +186,7 @@ $(document).ready(function() {
   $("#link-form").submit(function(e){
     e.preventDefault();
     var url = $("#url").val();
-    if (validUrl.isUri(url))
+    if (validUrl.isWebUri(url))
     {
       Dropbox.save(url, options);
     } else {
