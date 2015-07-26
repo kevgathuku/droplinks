@@ -26,6 +26,7 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-browserify": "^3.8.0",
+    "grunt-contrib-jshint": "^0.11.2",
     "grunt-contrib-watch": "^0.6.1",
     "nodemon": "^1.3.8"
   }
