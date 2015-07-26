@@ -24,6 +24,8 @@
     "valid-url": "^1.0.9"
   },
   "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.8.0",
     "nodemon": "^1.3.8"
   }
 }
