@@ -9,8 +9,14 @@ module.exports = function(grunt) {
       all: ['Gruntfile.js', 'static/js/main.js']
     },
     watch: {
-      files: [ 'static/js/main.js' ],
-      tasks: [ 'browserify' ]
+      lint: {
+        files: ['Gruntfile.js', 'static/js/main.js'],
+        tasks: ['jshint']
+      },
+      browserify: {
+        files: [ 'static/js/main.js' ],
+        tasks: [ 'browserify']
+      }
     }
   });
   grunt.loadNpmTasks('grunt-browserify');
