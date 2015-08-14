@@ -6,32 +6,32 @@ server.connection({ port: process.env.PORT || 3000 });
 
 server.views({
   engines: {
-    html: require('handlebars')
+    html: require('handlebars'),
   },
-  path: Path.join(__dirname, 'templates')
+  path: Path.join(__dirname, 'templates'),
 });
 
 var routes = [
 {
   method: 'GET',
   path: '/',
-  handler: function (request, reply) {
-      reply.view('index', { title: 'Dropbox Link Saver' });
-  }
+  handler: function(request, reply) {
+    reply.view('index', { title: 'Dropbox Link Saver' });
+  },
 },
 {
   method: 'GET',
   path: '/{param*}',
   handler: {
     directory: {
-      path: 'static'
-    }
-  }
-}
+      path: 'static',
+    },
+  },
+},
 ]
 
 server.route(routes);
 
-server.start(function () {
+server.start(function() {
   console.log('Server running at:', server.info.uri);
 });

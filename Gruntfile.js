@@ -7,20 +7,20 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     browserify: {
       // build bundle.js from main.js
-      'static/js/bundle.js': ['static/js/main.js']
+      'static/js/bundle.js': ['static/js/main.js'],
     },
     jshint: {
-      all: ['Gruntfile.js', 'static/js/main.js']
+      all: ['Gruntfile.js', 'static/js/main.js'],
     },
     watch: {
       lint: {
         files: ['Gruntfile.js', 'static/js/main.js'],
-        tasks: ['jshint']
+        tasks: ['jshint'],
       },
       browserify: {
-        files: [ 'static/js/main.js' ],
-        tasks: [ 'browserify']
-      }
-    }
+        files: ['static/js/main.js'],
+        tasks: ['browserify'],
+      },
+    },
   });
 };
