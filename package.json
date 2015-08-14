@@ -4,8 +4,10 @@
   "description": "A minimal example demonstrating saving web links to Dropbox",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
+  },
+  "engines": {
+    "npm": "2.1.x"
   },
   "keywords": [
     "dropbox",
