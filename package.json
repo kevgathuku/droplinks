@@ -4,7 +4,7 @@
   "description": "A minimal example demonstrating saving web links to Dropbox",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "http-server -a localhost"
   },
   "engines": {
     "npm": "2.1.x"
@@ -29,6 +29,6 @@
     "grunt-contrib-jshint": "^0.11.2",
     "grunt-contrib-watch": "^0.6.1",
     "http-server": "^0.9.0",
-    "load-grunt-tasks": "^3.2.0",
+    "load-grunt-tasks": "^3.2.0"
   }
 }
