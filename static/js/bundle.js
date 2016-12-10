@@ -190,7 +190,7 @@ $(document).ready(function() {
     {
       // Extract filename from the URL
       // http://befused.com/javascript/get-filename-url
-      var filename = url.substring(url.lastIndexOf('/') + 1);
+      var filename = decodeURIComponent(url.substring(url.lastIndexOf('/') + 1));
       Dropbox.save(url, filename, options);
     } else {
       alert('Please enter a valid link');
