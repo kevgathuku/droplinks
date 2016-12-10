@@ -32,7 +32,10 @@ $(document).ready(function() {
     var url = $('#url').val();
     if (validUrl.isWebUri(url))
     {
-      Dropbox.save(url, options);
+      // Extract filename from the URL
+      // http://befused.com/javascript/get-filename-url
+      var filename = url.substring(url.lastIndexOf('/') + 1);
+      Dropbox.save(url, filename, options);
     } else {
       alert('Please enter a valid link');
     }
